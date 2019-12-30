@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" </head> <body>
+  <div class="container d-flex">
+    <div id="rgb">
+      <h2>RGB</h2>
+      <form id="input-form" class="form-inline">
+        <div id="r">
+          <h3>R :</h3>
+          <input type="text" class="form-control" id="r-input" placeholder="0 - 255 ...">
+          <div id="red-box" class="color-box"></div>
+        </div>
+        <div id="g">
+          <h3>G :</h3>
+          <input type="text" class="form-control" id="g-input" placeholder="0 - 255 ...">
+          <div id="green-box" class="color-box"></div>
+        </div>
+        <div id="b">
+          <h3>B :</h3>
+          <input type="text" class="form-control" id="b-input" placeholder="0 - 255 ...">
+          <div id="blue-box" class="color-box"></div>
+        </div>
+        <input type='button' name='submit' onclick="controller.valueRgb()" class="btn btn-primary" value="Convert">
+      </form>
+    </div>
+    <div id="hex">
+      <h2>HEX</h2>
+      <div id="hex-line">
+        <form id="hex-input-form" class="form-inline">
+          <input type="text" class="form-control" id="hex-input" placeholder="...">
+          <div id="hex-box" class="hex-color-box" color="#000099"> </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+    </body>
+
+</html>
